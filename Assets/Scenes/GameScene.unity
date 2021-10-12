@@ -1309,7 +1309,7 @@ MonoBehaviour:
   ScoreText: {fileID: 1404009013}
   TotalScore: 60
   TimerText: {fileID: 1388341538}
-  TimeLeft: 5
+  TimeLeft: 35
   TimeRemaining: 0
 --- !u!1 &513957027
 GameObject:
