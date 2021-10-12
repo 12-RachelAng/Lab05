@@ -8,7 +8,17 @@ public class CollisionScript : MonoBehaviour
 {
     //Scoring
     public Text ScoreText;
-    public int Score;
+    public float TotalScore;
+
+    private float Score;
+
+    //Timer
+    public Text TimerText;
+    public float TimeLeft;
+    public float TimeRemaining;
+
+    private float TimerValue;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +29,25 @@ public class CollisionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Score (Coin)
         ScoreText.text = "Coin: " + Score;
+
+        //Timer
+        TimeLeft -= Time.deltaTime;
+        TimeRemaining = Mathf.FloorToInt(TimeLeft % 60);
+        TimerText.text = "Timer: " + TimeRemaining.ToString();
+
+        if (Score == TotalScore)
+        {
+            if (TimeLeft <= TimerValue)
+            {
+                SceneManager.LoadScene("GameWin");
+            }
+        }
+        else if(TimeLeft <= 1)
+        {
+            SceneManager.LoadScene("GameLose");
+        }
     }
 
     public void OnTriggerEnter(Collider other)
