@@ -2764,7 +2764,7 @@ GameObject:
   - component: {fileID: 1154888796}
   m_Layer: 4
   m_Name: WaterProDaytime
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
