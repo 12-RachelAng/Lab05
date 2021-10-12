@@ -1290,7 +1290,7 @@ GameObject:
   - component: {fileID: 513957026}
   m_Layer: 0
   m_Name: FPSController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1308,9 +1308,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1404009013}
-  TotalScore: 60
+  TotalScore: 6
+  Score: 0
   TimerText: {fileID: 1388341538}
-  TimeLeft: 35
+  TimeLeft: 30
   TimeRemaining: 0
   CoinParticle: {fileID: 747577824}
 --- !u!1 &513957027
@@ -1423,7 +1424,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

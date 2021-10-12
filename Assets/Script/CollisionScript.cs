@@ -10,7 +10,7 @@ public class CollisionScript : MonoBehaviour
     public Text ScoreText;
     public float TotalScore;
 
-    private float Score;
+    public int Score;
 
     //Timer
     public Text TimerText;
@@ -50,6 +50,11 @@ public class CollisionScript : MonoBehaviour
         else if(TimeLeft <= 1)
         {
             SceneManager.LoadScene("GameLose");
+        }
+
+        if (Score >= 60)
+        {
+            SceneManager.LoadScene("GameWin");
         }
     }
 
