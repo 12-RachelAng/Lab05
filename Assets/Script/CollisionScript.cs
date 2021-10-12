@@ -19,11 +19,14 @@ public class CollisionScript : MonoBehaviour
 
     private float TimerValue;
 
+    //ParticleSystem
+    public ParticleSystem CoinParticle;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        CoinParticle.Stop();
+        CoinParticle.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -55,6 +58,7 @@ public class CollisionScript : MonoBehaviour
         //When collides with Coin
         if (other.gameObject.tag == "Coin")
         {
+            CoinParticle.Play();
             Score += 10;
             ScoreText.text = "Coin: " + Score;
 
