@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class CollisionScript : MonoBehaviour
 {
@@ -44,16 +45,31 @@ public class CollisionScript : MonoBehaviour
         {
             if (TimeLeft <= TimerValue)
             {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
+                GameObject.Find("FPSController").GetComponent<FirstPersonController>().m_MouseLook.m_cursorIsLocked = false;
+
                 SceneManager.LoadScene("GameWin");
             }
         }
         else if(TimeLeft <= 1)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            GameObject.Find("FPSController").GetComponent<FirstPersonController>().m_MouseLook.m_cursorIsLocked = false;
+
             SceneManager.LoadScene("GameLose");
         }
 
         if (Score >= 60)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            GameObject.Find("FPSController").GetComponent<FirstPersonController>().m_MouseLook.m_cursorIsLocked = false;
+
             SceneManager.LoadScene("GameWin");
         }
     }
@@ -72,6 +88,11 @@ public class CollisionScript : MonoBehaviour
 
         if (other.gameObject.tag == "Water")
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            GameObject.Find("FPSController").GetComponent<FirstPersonController>().m_MouseLook.m_cursorIsLocked = false;
+
             SceneManager.LoadScene("GameLose");
         }
     }
