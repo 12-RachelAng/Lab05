@@ -1152,10 +1152,11 @@ MonoBehaviour:
     BobAmount: 0.1
   m_StepInterval: 5
   m_FootstepSounds:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
-  m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
-  m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  - {fileID: 8300000, guid: dcbbbe7f6fa72456780af0df979dd2f2, type: 3}
+  - {fileID: 8300000, guid: aef1e9e2dba5441d0a15d9b26e8a2919, type: 3}
+  - {fileID: 8300000, guid: 96e570e1f57d941a99b075e94a6657de, type: 3}
+  m_JumpSound: {fileID: 8300000, guid: b956f758e30e243e6ae392e5ec87a31c, type: 3}
+  m_LandSound: {fileID: 8300000, guid: b1d46e61af97c4e999513b1ca0de7f40, type: 3}
 --- !u!124 &505253095
 Behaviour:
   m_ObjectHideFlags: 0
@@ -6589,13 +6590,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747577822}
-  m_LocalRotation: {x: -0.42525226, y: 0.42525226, z: 0.5649429, w: 0.5649429}
-  m_LocalPosition: {x: 0.11000015, y: 0.7399999, z: 3.650002}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0.11, y: 0.74, z: 3.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 514179201}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -73.94, y: 0, z: 90.00001}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &823110498
 MeshFilter:
   m_ObjectHideFlags: 0
